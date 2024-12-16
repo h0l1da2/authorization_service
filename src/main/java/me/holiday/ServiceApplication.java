@@ -1,9 +1,9 @@
-package me.holiday.service;
+package me.holiday;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "me.holiday")
 public class ServiceApplication {
 
 	public static void main(String[] args) {
