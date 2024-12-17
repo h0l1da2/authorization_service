@@ -1,10 +1,10 @@
-package me.holiday.common;
+package me.holiday.common.annotation;
 
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import me.holiday.sub.exception.AuthException;
-import me.holiday.sub.exception.ServerException;
+import me.holiday.common.exception.AuthException;
+import me.holiday.common.exception.ServerException;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -25,7 +25,7 @@ import java.net.http.HttpResponse;
 @RequiredArgsConstructor
 public class AuthAspect {
 
-    @Pointcut("@annotation(RequireAuth) || @within(RequireAuth)")
+    @Pointcut("@annotation(me.holiday.common.annotation.RequireAuth) || @within(me.holiday.common.annotation.RequireAuth)")
     public void requireAuth() {}
 
     private final HttpServletRequest request;
