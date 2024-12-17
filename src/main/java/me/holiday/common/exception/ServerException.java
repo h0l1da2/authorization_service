@@ -1,4 +1,4 @@
-package me.holiday.exception;
+package me.holiday.common.exception;
 
 import org.springframework.http.HttpStatus;
 

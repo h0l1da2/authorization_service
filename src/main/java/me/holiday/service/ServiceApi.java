@@ -1,7 +1,7 @@
 package me.holiday.service;
 
 import lombok.RequiredArgsConstructor;
-import me.holiday.common.RequireAuth;
+import me.holiday.common.annotation.RequireAuth;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

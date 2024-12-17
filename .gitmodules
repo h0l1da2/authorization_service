@@ -1,0 +1,3 @@
+[submodule "src/main/java/me/holiday/sub"]
+	path = src/main/java/me/holiday/sub
+	url = https://github.com/h0l1da2/authorization_sub_module.git

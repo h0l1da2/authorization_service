@@ -1,4 +1,4 @@
-package me.holiday.exception;
+package me.holiday.common.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @Slf4j
 @ControllerAdvice
-public class GlobalExceptionHandler {
+public class CommonExceptionHandler {
 
     @ExceptionHandler(DefaultException.class)
     public ResponseEntity<ApiErrorResponse> globalException(DefaultException e) {
